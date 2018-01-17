@@ -21,7 +21,7 @@ function preload() {
     game.load.image('sky', 'assets/sky.png');
     game.load.image('ground', 'assets/platform.png');
     game.load.image('star', 'assets/star.png');
-    game.load.spritesheet('dude', 'assets/goku.png', 66.6, 94);
+    game.load.spritesheet('dude', 'assets/goku.png', 66.6666, 94);
 //32,48
 }
 
@@ -64,8 +64,8 @@ function create() {
     ledge.body.immovable = true;
 
     // The player and its settings
-    player = game.add.sprite(32, game.world.height - 1000, 'dude');
-//150
+    player = game.add.sprite(69, game.world.height - 1000, 'dude');
+//32, 150
     //  We need to enable physics on the player
     game.physics.arcade.enable(player);
 
