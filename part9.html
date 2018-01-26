@@ -48,7 +48,7 @@ function create() {
     platforms.enableBody = true;
 
     // Here we create the ground.
-    var ground = platforms.create(-100, game.world.height - 80, 'ground');
+    var ground = platforms.create(-100, game.world.height - 70, 'ground');
 	//0, 64
     //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
     ground.scale.setTo(2, 2);
@@ -65,7 +65,7 @@ function create() {
     ledge.body.immovable = true;
 	//-150, 250
     // The player and its settings
-    player = game.add.sprite(69, game.world.height - 1000, 'dude');
+    player = game.add.sprite(69, game.world.height - 80, 'dude');
 //32, 150
     //  We need to enable physics on the player
     game.physics.arcade.enable(player);
