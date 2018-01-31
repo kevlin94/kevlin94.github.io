@@ -26,10 +26,10 @@ function preload() {
     game.load.spritesheet('enemy', 'assets/enemy.png', 460.25, 600);
 }
 
-var player = game.physics.p2.createCollisionGroup();
-var platforms = game.physics.p2.createCollisionGroup();
+var player;
+var platforms;
 var cursors;
-var enemy = game.physics.p2.createCollisionGroup();
+var enemy;
 
 var stars;
 var score = 0;
