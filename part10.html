@@ -87,8 +87,14 @@ enemy = game.add.sprite(100, 200, 'enemy');
 	enemy.animations.add('walk');
 	enemy.animations.play('walk',20, true);
 	game.physics.p2.enable('enemy');
-	enemy.body.setCollisionGroup(enemyCG);
-	enemy.body.collides(dudeCG);
+	enemy.body.setCollisionGroup(enemy);
+	enemy.body.collides(dude);
+	
+	game.physics.arcade.enable(enemy);
+	
+	enemy.body.bounce.y = 0.2;
+    enemy.body.gravity.y = 300;
+    player.body.collideWorldBounds = true;
 
     //  Finally some stars to collect
     stars = game.add.group();
