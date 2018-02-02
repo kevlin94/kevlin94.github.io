@@ -83,11 +83,9 @@ function create() {
 	//player.animations.add('right', [5, 6, 7, 8], 10, true);
 
     //  Finally some stars to collect
-    <marquee scrollamount="10"
-direction="left"
-behavior="alternate">
-<stars = game.add.group();/>
-</marquee>
+    
+stars = game.add.group()
+
 
     //  We will enable physics for any star that is created in this group
     stars.enableBody = true;
