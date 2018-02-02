@@ -4,8 +4,9 @@
 	<meta charset="UTF-8" />
     <title>Phaser - Making your first game, part 9</title>
 	<script type="text/javascript" src="js/phaser.min.js"></script>
-    <style type="text/css">
-        body {
+    <style>
+        body {color:blue;
+		font-size:300px;
             margin: 0;
         }
     </style>
@@ -101,7 +102,7 @@ function create() {
     }
 
     //  The score
-    scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+    scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '300px', fill: '#000' });
 
     //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
