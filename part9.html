@@ -20,7 +20,7 @@ function preload() {
 
     game.load.image('sky', 'assets/maplestorybackground.png');
     game.load.image('ground', 'assets/finalmaplestoryplatform.png');
-    game.load.image('star', 'assets/wyvern.png');
+    game.load.image('star', 'assets/Wyvern.png');
     game.load.spritesheet('dude', 'assets/Skeleton.png', 64, 64);
 //32,48
 }
@@ -61,7 +61,7 @@ function create() {
 	//400,400
     ledge.body.immovable = true;
 
-    ledge = platforms.create(-200, 250, 'ground');
+    ledge = platforms.create(-200, 150, 'ground');
     ledge.body.immovable = true;
 	//-150, 250
     // The player and its settings
