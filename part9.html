@@ -9,6 +9,7 @@
 		font-size:300px;
             margin: 0;
         }
+	    scoreText.text{font-size:2000px}
     </style>
 </head>
 <body>
@@ -104,7 +105,7 @@ stars = game.add.group()
     }
 
     //  The score
-    scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '1000px', fill: '#000' });
+    scoreText = game.add.text(100, 100, 'Score: 0', { fontSize: '2000px', fill: '#000' });
 
     //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
