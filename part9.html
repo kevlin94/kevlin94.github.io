@@ -34,7 +34,7 @@ var cursors;
 var stars;
 var score = 0;
 var scoreText;
-
+var author;
 function create() {
 
     //  We're going to be using physics, so enable the Arcade Physics system
@@ -106,6 +106,7 @@ stars = game.add.group()
 
     //  The score
     scoreText = game.add.text(100, 100, 'Monster Defeated: 0', { font:"50px Courier", fill: '#FFFFFF' });
+	author = game.add.text(1000, 500, 'Tyler Kevin Justin', { font:"15px Courier", fill: '#FFFFFF' });	
 
     //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
